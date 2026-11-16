@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7f8">
+  <title>Afterglow — The Conversations That Happen After</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="announcement">
+    ✳ A softer space for the things we don't always say out loud ✳
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      <span class="brand-mark">a<span>♡</span></span>
+      <span>afterglow</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#the-forum">The forum</a>
+      <a href="#about">Our purpose</a>
+      <a href="#guidelines">Community care</a>
+    </nav>
+
+    <button class="button button-dark header-cta" id="openPostTop">
+      Share your story ↗
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">THE SPACE AFTER</div>
+
+        <h1>
+          It's okay if it<br>
+          didn't feel like <em>fireworks.</em>
+        </h1>
+
+        <p class="hero-intro">
+          The conversations that happen after. A judgment-free space to unpack the feelings, questions, and little plot twists that can follow a hookup.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="#the-forum">Explore the forum ↘</a>
+          <button class="button button-light" id="openPostHero">Post anonymously ♡</button>
+        </div>
+
+        <div class="hero-note">
+          ♥ No names. No pressure. Just real feelings.
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="hero-sticker sticker-top">NO<br>JUDGMENT</div>
+
+        <div class="hero-card">
+          <span class="card-kicker">A NOTE TO SELF</span>
+          <div class="big-heart">♡</div>
+          <p>
+            You get to decide<br>
+            what feels good<br>
+            <i>for you.</i>
+          </p>
+          <span class="card-spark">✳</span>
+        </div>
+
+        <div class="hero-sticker sticker-bottom">
+          YOU'RE<br>NOT ALONE ✦
+        </div>
+
+        <span class="floating-star star-a">✳</span>
+        <span class="floating-star star-b">✧</span>
+        <span class="floating-star star-c">♡</span>
+      </div>
+
+      <div class="hero-bottom-label">
+        A LITTLE MORE HONESTY. A LITTLE LESS EXPECTATION.
+      </div>
+    </section>
+
+    <!-- MOVING MESSAGE -->
+    <section class="ticker">
+      <div>
+        YOUR EXPERIENCE IS YOURS ♡
+        THERE IS NO RIGHT WAY TO FEEL ✳
+        YOU ARE ALLOWED TO CHANGE YOUR MIND ♡
+        YOUR EXPERIENCE IS YOURS ✳
+      </div>
+    </section>
+
+    <!-- FORUM -->
+    <section class="forum-section section-wrap" id="the-forum">
+
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE COMMUNITY</div>
+          <h2>What's on your <em>mind?</em></h2>
+          <p class="section-subtitle">
+            Read a little, share a little, or just know you're not the only one.
+          </p>
+        </div>
+
+        <button class="button button-pink" id="openPostForum">
+          ＋ Write a post
+        </button>
+      </div>
+
+      <div class="forum-toolbar">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="All">All stories</button>
+          <button class="filter-tab" data-filter="Feelings">The feelings</button>
+          <button class="filter-tab" data-filter="Expectations">Expectations</button>
+          <button class="filter-tab" data-filter="Boundaries">Boundaries</button>
+          <button class="filter-tab" data-filter="Questions">Questions</button>
+        </div>
+
+        <label class="sort-control">
+          SORT BY
+          <select id="sortSelect">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="forum-layout">
+
+        <div class="post-list" id="postList" aria-live="polite">
+          <div class="loading-state">Gathering the conversation...</div>
+        </div>
+
+        <aside class="sidebar">
+
+          <div class="sidebar-card prompt-card">
+            <span class="sidebar-icon">✳</span>
+            <div class="eyebrow">A GENTLE CHECK-IN</div>
+            <h3>How did <em>you</em> feel?</h3>
+            <p>
+              Not how you think you should feel. Not how your friends would feel. Just you.
+            </p>
+            <button class="text-link" id="promptPost">
+              Put it into words →
+            </button>
+          </div>
+
+          <div class="sidebar-card quote-card">
+            <div class="quote-mark">“</div>
+            <p>
+              You don't have to perform pleasure, confidence, or indifference. Your feelings are allowed to be complicated.
+            </p>
+            <span>— A REMINDER FROM AFTERGLOW</span>
+          </div>
+
+          <div class="sidebar-card rules-mini" id="guidelines">
+            <div class="eyebrow">OUR COMMUNITY PROMISE</div>
+            <h3>Kindness is the <em>bare minimum.</em></h3>
+            <ul>
+              <li>Keep it about your experience.</li>
+              <li>Never identify or expose someone.</li>
+              <li>No shaming, mocking, or harassment.</li>
+              <li>Respect every boundary and perspective.</li>
+            </ul>
+            <a href="#community-note" class="text-link">
+              Read our full guidelines ↓
+            </a>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="purpose-section" id="about">
+      <div class="purpose-inner">
+
+        <div class="purpose-art">
+          <div class="purpose-circle">
+            <span>♡</span>
+            <small>YOUR BODY.<br>YOUR STORY.</small>
+          </div>
+          <span class="purpose-doodle">✳</span>
+          <span class="purpose-bow">୨୧</span>
+        </div>
+
+        <div class="purpose-copy">
+          <div class="eyebrow">WHY AFTERGLOW EXISTS</div>
+          <h2>Let's rewrite the<br><em>script.</em></h2>
+
+          <p>
+            Hookup culture can come with a whole set of expectations about what is supposed to be fun, empowering, casual, or satisfying. But real experiences are rarely that simple.
+          </p>
+
+          <p>
+            Afterglow makes room for honest reflection. By hearing from others, we can better understand our own boundaries, desires, and definitions of pleasure—without being told what we should want.
+          </p>
+
+          <div class="purpose-signoff">
+            With care, <span>the Afterglow community ♡</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMMUNITY GUIDELINES -->
+    <section class="community-note section-wrap" id="community-note">
+
+      <div class="note-heading">
+        <div class="eyebrow">BEFORE YOU JOIN IN</div>
+        <h2>Keep it <em>kind.</em></h2>
+      </div>
+
+      <div class="note-content">
+        <p>
+          Afterglow is a space for people to talk about <strong>their own feelings and experiences</strong>—not to identify, rate, expose, or make fun of anyone else.
+        </p>
+
+        <div class="guideline-grid">
+
+          <div>
+            <span>01</span>
+            <p><strong>Protect privacy.</strong> No names, handles, locations, screenshots, or details that could identify another person.</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <p><strong>Speak from your perspective.</strong> Share what you felt, needed, or learned.</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <p><strong>Leave judgment outside.</strong> No slut-shaming, body-shaming, harassment, or mocking someone's choices.</p>
+          </div>
+
+          <div>
+            <span>04</span>
+            <p><strong>Respect boundaries.</strong> Consent matters before, during, and after an encounter.</p>
+          </div>
+
+        </div>
+
+        <div class="privacy-warning">
+          <span>♡</span>
+          <p>
+            <strong>A note about anonymity:</strong> You can post without creating a profile or sharing your name. Still, please don't include identifying details. This site is a peer discussion space, not a confidential counseling service. Posts may be visible to anyone with access to the site.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#">
+      <span class="brand-mark">a<span>♡</span></span>
+      <span>afterglow</span>
+    </a>
+
+    <p>For the feelings after, and everything in between.</p>
+    <span class="footer-heart">made with care ♡</span>
+  </footer>
+
+  <!-- NEW POST WINDOW -->
+  <dialog class="post-dialog" id="postDialog">
+    <form id="postForm" class="dialog-card">
+
+      <button type="button" class="dialog-close" id="closePost">×</button>
+
+      <div class="eyebrow">YOUR SPACE, YOUR WORDS</div>
+      <h2>Share what's <em>on your mind.</em></h2>
+
+      <p class="dialog-intro">
+        Your post will appear without your name. Keep it about your own experience and leave identifying details out.
+      </p>
+
+      <label for="postTitle">Give your post a title</label>
+      <input id="postTitle" maxlength="100" required placeholder="A thought I've been sitting with...">
+
+      <label for="postCategory">Choose a category</label>
+      <select id="postCategory">
+        <option>Feelings</option>
+        <option>Expectations</option>
+        <option>Boundaries</option>
+        <option>Questions</option>
+      </select>
+
+      <label for="postBody">Your story</label>
+      <textarea id="postBody" rows="5" maxlength="2000" required placeholder="I've been thinking about..."></textarea>
+
+      <div class="char-count">
+        <span id="postCount">0</span>/2000
+      </div>
+
+      <label class="guideline-check">
+        <input type="checkbox" id="postAgree" required>
+        <span>I've kept names and identifying details out, and I agree to the community guidelines.</span>
+      </label>
+
+      <button class="button button-dark submit-button" type="submit">
+        Share anonymously ♡
+      </button>
+
+      <p class="form-message" id="postMessage"></p>
+    </form>
+  </dialog>
+
+  <!-- COMMENTS WINDOW -->
+  <dialog class="comment-dialog" id="commentDialog">
+    <div class="dialog-card comment-card">
+
+      <button type="button" class="dialog-close" id="closeComments">×</button>
+
+      <div id="commentPostContent"></div>
+      <div class="comment-list" id="commentList"></div>
+
+      <form id="commentForm" class="comment-form">
+
+        <label for="commentBody">Add a kind, thoughtful response</label>
+
+        <textarea id="commentBody" rows="3" maxlength="1000" required placeholder="I relate to this because..."></textarea>
+
+        <label class="guideline-check">
+          <input type="checkbox" id="commentAgree" required>
+          <span>My comment is respectful and doesn't identify anyone.</span>
+        </label>
+
+        <button class="button button-dark submit-button" type="submit">
+          Post anonymously ↗
+        </button>
+
+        <p class="form-message" id="commentMessage"></p>
+      </form>
+
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
